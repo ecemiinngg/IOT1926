@@ -1,0 +1,16 @@
+#include<Servo.h>
+Servo perde;
+int aci;
+void setup() {
+servo1.attach(5);
+}
+void loop() {
+for(aci=0;aci<=180;aci+=15){
+perde.write(aci);
+delay(100);
+}
+for(aci=180;aci<=0;aci-=30){
+perde.write(aci);
+delay(100);
+}
+}
