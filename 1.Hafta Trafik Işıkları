@@ -1,0 +1,27 @@
+void setup()//TrafikLAMBASI
+{
+  pinMode(5, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(7, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(7,HIGH);
+  delay(10000);
+  for(int b=6; b < 8; b++)
+  {
+    digitalWrite(b , HIGH);
+    delay(5000);
+  }
+   
+    digitalWrite(6, LOW);
+    digitalWrite(7, LOW);
+      delay(2000);
+   
+  
+  digitalWrite(5,HIGH);
+  delay(6000);
+  digitalWrite(5,LOW);
+  
+}
